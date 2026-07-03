@@ -146,22 +146,3 @@ python scripts/test_assistant_cli_smoke.py
 ## More detail
 
 See [docs/assistant_setup.md](docs/assistant_setup.md) for full setup, env vars, and example request bodies.
-
-## Publish to GitHub
-
-The repo is set up to exclude secrets and generated files (`.env`, `.venv`, `node_modules`, `dist`). Before your first push:
-
-1. Do **not** commit `.env` or `frontend/.env` — use the `.env.example` files instead.
-2. Initialize and push:
-
-```powershell
-cd "D:\RASPBERRY PI\AI-SQL"
-git init
-git add .
-git status
-git commit -m "Initial commit: AI SQL assistant"
-git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
-git push -u origin main
-```
-
-Review `git status` before committing and confirm no `.env` files are staged.
